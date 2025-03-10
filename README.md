@@ -1,7 +1,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## Overview
-This project contains instructions to try out our [Soundscape-to-Image](https://github.com/GISense/Soundscape-to-Image/tree/main) model trained on 8k audio-image pairs from Youtube videos. 
+This project contains instructions to try out our [Soundscape-to-Image](https://github.com/GISense/Soundscape-to-Image/tree/main) model trained on 8k audio-image pairs from publicly available Youtube videos. 
 
  ## Environment
 1. Environment: Python 3.12 or newer  
@@ -12,12 +12,12 @@ This project contains instructions to try out our [Soundscape-to-Image](https://
  
 ## Checkpoints
 Audio encoder: [wlc.pt](https://drive.google.com/file/d/1QsF_tdm5Vk-qQ8kxfAAMs-xjKMDSpl5x/view?usp=drive_link) 
+
 U-Net model: [CEUS.pt](https://drive.google.com/file/d/1ZQDRqwDZ51-Geq0MNrPtTZTSpOZdB6TJ/view?usp=sharing)
 
 ## Inference
-Run [sample.py](sample.py).
+Run [sample.py](sample.py):
 
-Usage:
 ```
 python sample.py --audio-enconder-ckpt [PATH_TO_AUDIO_ENCODER_CKPT] --unet-ckpt [PATH_TO_UNET_CKPT] --test-audio-path [PATH_TO_TEST_AUDIO] --test-image-path [PATH_TO_OUTPUT_IMAGES] --cond-scale [CONDITION_SCALE]
 ```
@@ -26,7 +26,7 @@ python sample.py --audio-enconder-ckpt [PATH_TO_AUDIO_ENCODER_CKPT] --unet-ckpt 
 --audio-enconder-ckpt <span style="color:red">Path to the pre-trained audio encoder checkpoint (e.g., ./wlc.pt).</span> 
 --unet-ckpt  <span style="color:red">Path to the trained U-Net model checkpoint (e.g., ./CEUS.pt).</span> 
 --test-audio-path <span style="color:red">Directory containing test audio files (e.g., ./audio).</span> 
---test-image-path <span style="color:red">Directory where generated images will be saved (e.g., ./image).</span> 
+--test-image-path <span style="color:red">Directory where generated images will be saved (e.g., ./images).</span> 
 --cond-scale <span style="color:red">Controls how strongly the model adheres to the audio features (default: 5.0).</span> </pre>
 
 Example:
@@ -44,6 +44,7 @@ imagen_pytorch → Our image generation module, based on Imagen. We have modifie
 project
 |-- torchvggish
 |-- imagen_pytorch
-|-- train.py
 |-- sample.py
+|-- wlc.pt
+|-- CEUS.pt
 ```
