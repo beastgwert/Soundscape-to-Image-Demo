@@ -47,4 +47,6 @@ project
 |-- sample.py
 |-- wlc.pt
 |-- CEUS.pt
+|-- audio
+|-- images
 ```
