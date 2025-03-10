@@ -103,7 +103,7 @@ if __name__ == "__main__":
     parser.add_argument('--audio-enconder-ckpt', type=str, default= './wlc.pt', required=False, help="path to the checkpoint")
     parser.add_argument('--unet-ckpt', type=str, default= './CEUS.pt', required=False, help="path to the checkpoint")
     parser.add_argument('--test-audio-path', type=str, default= './audio', required=False, help="path to the dataset")
-    parser.add_argument('--test-image-path', type=str, default= './image', required=False, help="path to the dataset")
+    parser.add_argument('--test-image-path', type=str, default= './images', required=False, help="path to the dataset")
     parser.add_argument('--cond-scale', type=float, default= 5., required=False, help="path to the dataset")
     args = parser.parse_args()
     main(args)
