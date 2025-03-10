@@ -10,8 +10,8 @@ This project contains instructions to try out our [Soundscape-to-Image](https://
   pip install -r requirements.txt
   ```
 3. Download checkpoints:
-   - Audio encoder: [wlc.pt](https://drive.google.com/file/d/1QsF_tdm5Vk-qQ8kxfAAMs-xjKMDSpl5x/view?usp=drive_link) 
-   - U-Net model: [CEUS.pt](https://drive.google.com/file/d/1ZQDRqwDZ51-Geq0MNrPtTZTSpOZdB6TJ/view?usp=sharing)
+   - Audio encoder: <a href="https://drive.google.com/file/d/1QsF_tdm5Vk-qQ8kxfAAMs-xjKMDSpl5x/view?usp=drive_link" target="_blank">wlc.pt</a> 
+   - U-Net model: <a href="https://drive.google.com/file/d/1ZQDRqwDZ51-Geq0MNrPtTZTSpOZdB6TJ/view?usp=sharing" target="_blank">CEUS.pt</a>
 
 ## Inference
 Run [sample.py](sample.py):
